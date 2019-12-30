@@ -1,0 +1,24 @@
+{
+  "name": "react-native-webp-format",
+  "version": "1.0",
+  "keywords": [
+    "react",
+    "react-native",
+    "ios",
+    "android",
+    "webp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleksefo/react-native-webp-format.git"
+  },
+  "description": "WebP integration for React Native apps",
+  "homepage": "https://github.com/Aleksefo/react-native-webp-format",
+  "bugs": {
+    "url": "https://github.com/Aleksefo/react-native-webp-format/issues"
+  },
+  "author": {
+    "name": "Alex Fomushkin"
+  },
+  "license": "MIT"
+}
