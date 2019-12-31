@@ -1,4 +1,4 @@
-##React Native WebP Format
+## React Native WebP Format
 
 WebP image integration for React Native apps. Save tens of megabytes with this simple trick.
 
@@ -32,4 +32,4 @@ Simply replace .png with .webp after you've converted your files
 <Image source={'../../assets/close.webp'} />
 
 
-PRs are welcomed
+PRs are welcomed ❤️
