@@ -9,6 +9,9 @@
     <img src="https://img.shields.io/github/license/Aleksefo/react-native-webp-format" alt="The library is released under the MIT license." />
   </a>
   <a href="https://www.npmjs.com/package/react-native-webp-format">
+    <img src="https://img.shields.io/npm/dm/react-native-webp-format" alt="NPM monthly downloads">
+  </a>
+  <a href="https://www.npmjs.com/package/react-native-webp-format">
     <img src="https://img.shields.io/npm/v/react-native-webp-format" alt="Current npm package version." />
   </a>
   <a href="https://github.com/Aleksefo/react-native-webp-format/pulls">
@@ -20,7 +23,9 @@
 </p>
 WebP image integration for React Native apps. 
 
-By utilizing WebP instead of png you can reduce the size of your app by several times while the image quality remains the same.
+By utilizing WebP instead of png/jpg you can significantly reduce the size of your app without quality loss.
+
+Works with both Image and ImageBackground React Native components.
 
 iOS uses [SDWebImage](https://github.com/SDWebImage/SDWebImage) implementation and Android utilizes [Fresco](https://github.com/facebook/fresco) to boost the gained performance even more.
 
@@ -40,15 +45,15 @@ Add the following dependencies to `android/app/build.gradle`:
 ```
 dependencies {
   ...
-  implementation 'com.facebook.fresco:webpsupport:2.0.0'
+  implementation 'com.facebook.fresco:webpsupport:2.1.0'
   // Optionally, to display animated WebP images, you have to add:
-  implementation 'com.facebook.fresco:animated-webp:2.0.0'
+  implementation 'com.facebook.fresco:animated-webp:2.1.0'
   ...
 }
 ```
 ## Usage
-Simply replace .png with .webp after you've converted your files
-<Image source={'../../assets/close.webp'} />
+Simply replace .png or .jpg with .webp after you've converted your files
+<Image source={require('../../assets/close.webp')} />
 
 
 PRs are welcomed ❤️
