@@ -29,8 +29,11 @@ Works with both Image and ImageBackground React Native components.
 
 iOS uses [SDWebImage](https://github.com/SDWebImage/SDWebImage) implementation and Android utilizes [Fresco](https://github.com/facebook/fresco) to boost the gained performance even more.
 
+
+[Here's a detailed article](https://medium.com/@aleksefo/reduce-react-native-application-size-with-webp-image-format-41bdd767a7ac) with extra details and information on what is the best way to convert your regular images to WebP.
+
 ## Prerequisites:
-- React Native version `0.61` or higher. Older versions might work too, but that's not guaranteed.
+- React Native version `0.61` or higher (last tested on `0.63.2`). Older versions might work too, but that's not guaranteed.
 
 ## Installation
 ```
@@ -51,6 +54,9 @@ dependencies {
   ...
 }
 ```
+
+Remember to restart your packager to see the changes. If you still have any issues, try resetting the cache.
+
 ## Usage
 Simply replace .png or .jpg with .webp after you've converted your files
 <Image source={require('../../assets/close.webp')} />
