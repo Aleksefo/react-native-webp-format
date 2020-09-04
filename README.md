@@ -48,9 +48,9 @@ Add the following dependencies to `android/app/build.gradle`:
 ```
 dependencies {
   ...
-  implementation 'com.facebook.fresco:webpsupport:2.1.0'
+  implementation 'com.facebook.fresco:webpsupport:2.0.0'
   // Optionally, to display animated WebP images, you have to add:
-  implementation 'com.facebook.fresco:animated-webp:2.1.0'
+  implementation 'com.facebook.fresco:animated-webp:2.0.0'
   ...
 }
 ```
