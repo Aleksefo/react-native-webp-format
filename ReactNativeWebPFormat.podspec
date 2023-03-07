@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.source_files        = 'ios/*.{h,m}'
   s.requires_arc        = true
   s.platforms           = { :ios => "9.0" }
-  s.dependency            'React'
+  s.dependency            'React-Core'
   s.dependency            'SDWebImageWebPCoder'
 end
