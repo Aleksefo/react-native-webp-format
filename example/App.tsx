@@ -24,7 +24,10 @@ function App(): JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-
+  const {width, height} = Image.resolveAssetSource(
+    require('./assets/1.sm.webp'),
+  );
+  console.log('App2, ', {width, height});
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
@@ -37,6 +40,13 @@ function App(): JSX.Element {
       <Text>Animated WebP Image</Text>
       <Image
         source={require('./assets/animated-webp-supported.webp')}
+        style={styles.image}
+      />
+      <Text>WebP Image from a website</Text>
+      <Image
+        source={{
+          uri: 'https://www.gstatic.com/webp/gallery/2.jpg',
+        }}
         style={styles.image}
       />
       <Text>WebP ImageBackground</Text>
@@ -55,7 +65,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   image: {
-    height: 150,
+    height: '20%',
     width: '100%',
   },
   imageBackground: {
