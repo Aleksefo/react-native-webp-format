@@ -33,7 +33,7 @@ iOS uses [SDWebImage](https://github.com/SDWebImage/SDWebImage) implementation a
 [Here's a detailed article](https://medium.com/@aleksefo/reduce-react-native-application-size-with-webp-image-format-41bdd767a7ac) with extra details and information on what is the best way to convert your regular images to WebP.
 
 ## Prerequisites:
-- React Native version `0.61` or higher (last tested on `0.63.2`). Older versions might work too, but that's not guaranteed.
+- React Native version `0.61` or higher (last tested on `0.71.6`). Older versions might work too, but that's not guaranteed.
 
 ## Installation
 ```
@@ -48,13 +48,14 @@ Add the following dependencies to `android/app/build.gradle`:
 ```
 dependencies {
   ...
-  implementation 'com.facebook.fresco:webpsupport:2.0.0'
-  // Optionally, to display animated WebP images, you have to add:
-  implementation 'com.facebook.fresco:animated-webp:2.0.0'
+    implementation 'com.facebook.fresco:webpsupport:2.5.0'
+    // Optionally, to display animated WebP images, you have to add:
+    implementation 'com.facebook.fresco:animated-webp:2.5.0'
   ...
 }
 ```
 
+Check the example app if you have any issues.
 Remember to restart your packager to see the changes. If you still have any issues, try resetting the cache.
 
 ## Usage
