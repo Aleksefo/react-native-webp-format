@@ -422,8 +422,8 @@ PODS:
     - React-jsi (= 0.71.6)
     - React-logger (= 0.71.6)
     - React-perflogger (= 0.71.6)
-  - ReactNativeWebPFormat (1.1.2):
-    - React
+  - ReactNativeWebPFormat (1.2.0):
+    - React-Core
     - SDWebImageWebPCoder
   - SDWebImage/Core (5.15.5)
   - SDWebImageWebPCoder (0.11.0):
@@ -637,7 +637,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 73d201599a64ea14b4e0b8f91b64970979fd92e6
   React-runtimeexecutor: 8692ac548bec648fa121980ccb4304afd136d584
   ReactCommon: 0c43eaeaaee231d7d8dc24fc5a6e4cf2b75bf196
-  ReactNativeWebPFormat: 4275844b80c2c385a10ab64f50264d720f2d691c
+  ReactNativeWebPFormat: f5f043cc9ded052e535c3869ec341f91ba5a67c5
   SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
   SDWebImageWebPCoder: 295a6573c512f54ad2dd58098e64e17dcf008499
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608

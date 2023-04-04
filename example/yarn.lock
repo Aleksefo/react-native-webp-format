@@ -5729,10 +5729,10 @@ react-native-gradle-plugin@^0.71.17:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.17.tgz#cf780a27270f0a32dca8184eff91555d7627dd00"
   integrity sha512-OXXYgpISEqERwjSlaCiaQY6cTY5CH6j73gdkWpK0hedxtiWMWgH+i5TOi4hIGYitm9kQBeyDu+wim9fA8ROFJA==
 
-react-native-webp-format@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/react-native-webp-format/-/react-native-webp-format-1.1.2.tgz#22b14f544191e9a5411c920b9874e532a6ea6c89"
-  integrity sha512-qs0oyLZOjoLdlTM9781Vr8WBwvtdkcwQuSJpCtA5KxspGl+YDDDZrW+tpwRQI0PSlB84O+IoK3bfmgHu1zqejQ==
+react-native-webp-format@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-webp-format/-/react-native-webp-format-1.2.0.tgz#6c7cbed4cdc8247711c7d7f656d0d4f739836c82"
+  integrity sha512-tUL/AbM6QwUsxsGutJ1bN4RW8JdD2w5Mpj+An4DvYKkm0bKHbODj7U7gI1+8X68GqJWOy+Ps2cbVmgNpSDfRPQ==
 
 react-native@0.71.6:
   version "0.71.6"
