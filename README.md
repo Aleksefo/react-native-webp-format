@@ -17,9 +17,6 @@
   <a href="https://github.com/Aleksefo/react-native-webp-format/pulls">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
   </a>
-  <a href="https://twitter.com/intent/follow?screen_name=aleksefo">
-    <img src="https://img.shields.io/twitter/follow/aleksefo.svg?label=Follow%20@aleksefo" alt="Follow @aleksefo" />
-  </a>
 </p>
 WebP image integration for React Native apps. 
 
@@ -30,14 +27,15 @@ Works with both Image and ImageBackground React Native components.
 iOS uses [SDWebImage](https://github.com/SDWebImage/SDWebImage) implementation and Android utilizes [Fresco](https://github.com/facebook/fresco) to boost the gained performance even more.
 
 
-[Here's a detailed article](https://medium.com/@aleksefo/reduce-react-native-application-size-with-webp-image-format-41bdd767a7ac) with extra details and information on what is the best way to convert your regular images to WebP.
+[Here's a detailed article](https://medium.com/@aleksefo/reduce-react-native-application-size-with-webp-image-format-41bdd767a7ac) with extra information on what is the best way to convert your regular images to WebP.
 
 ## Prerequisites:
-- React Native version `0.61` or higher (last tested on `0.71.6`). Older versions might work too, but that's not guaranteed.
+- React Native version `0.61` or higher (last tested on `0.78.0`). Older versions might work too, but that's not guaranteed.
 
 ## Installation
 ```
 yarn add react-native-webp-format
+npm i react-native-webp-format
 ```
 #### iOS
 ```
@@ -48,9 +46,9 @@ Add the following dependencies to `android/app/build.gradle`:
 ```
 dependencies {
   ...
-    implementation 'com.facebook.fresco:webpsupport:2.5.0'
-    // Optionally, to display animated WebP images, you have to add:
-    implementation 'com.facebook.fresco:animated-webp:2.5.0'
+  implementation 'com.facebook.fresco:webpsupport:3.2.0'    
+  // Optionally, to display animated WebP images, you have to add:
+  implementation 'com.facebook.fresco:animated-webp:3.2.0'
   ...
 }
 ```
