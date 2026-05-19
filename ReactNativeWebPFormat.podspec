@@ -14,5 +14,6 @@ Pod::Spec.new do |s|
   s.requires_arc        = true
   s.platforms           = { :ios => "9.0" }
   s.dependency            'React-Core'
+  s.dependency            'React-RCTImage'
   s.dependency            'SDWebImageWebPCoder'
 end

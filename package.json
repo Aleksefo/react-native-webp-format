@@ -1,6 +1,6 @@
 {
   "name": "react-native-webp-format",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "keywords": [
     "react",
     "react-native",
@@ -20,5 +20,17 @@
   "author": {
     "name": "Alex Fomushkin"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "main": "app.plugin.js",
+  "files": [
+    "app.plugin.js",
+    "ios",
+    "ReactNativeWebPFormat.podspec"
+  ],
+  "peerDependencies": {
+    "@expo/config-plugins": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@expo/config-plugins": "^55.0.7"
+  }
 }

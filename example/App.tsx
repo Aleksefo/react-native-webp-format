@@ -2,33 +2,17 @@ import React from 'react';
 import {
   Image,
   ImageBackground,
-  SafeAreaView,
   StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
-  View,
 } from 'react-native';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <View style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <SafeAreaView style={backgroundStyle}>
-        <StatusBar
-          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-          backgroundColor={backgroundStyle.backgroundColor}
-        />
+    <SafeAreaProvider>
+      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
+      <SafeAreaView style={styles.container}>
         <Text style={styles.title}>RN WebP example</Text>
         <Text>WebP Image</Text>
         <Image source={require('./assets/1.sm.webp')} style={styles.image} />
@@ -47,15 +31,21 @@ function App(): React.JSX.Element {
         <Text>WebP ImageBackground</Text>
         <ImageBackground
           source={require('./assets/3.sm.webp')}
-          style={styles.imageBackground}>
+          style={styles.imageBackground}
+        >
           <Text style={styles.description}>Text inside of the image</Text>
         </ImageBackground>
       </SafeAreaView>
-    </View>
+    </SafeAreaProvider>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#ffffff',
+    justifyContent: 'center',
+  },
   title: {
     fontSize: 24,
     fontWeight: '600',
@@ -74,7 +64,7 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 24,
     fontWeight: '600',
-    color: Colors.white,
+    color: '#ffffff',
   },
 });
 
