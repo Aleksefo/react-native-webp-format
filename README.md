@@ -61,15 +61,22 @@ Remember to restart your packager to see the changes. If you still have any issu
 Simply replace .png or .jpg with .webp after you've converted your files
 <Image source={require('../../assets/close.webp')} />
 
+#### Expo
+Add the plugin to your `app.json` / `app.config.js`:
+```json
+{
+  "expo": {
+    "plugins": ["react-native-webp-format"]
+  }
+}
+```
+Then run `npx expo prebuild` (or `eas build`). The plugin automatically adds the required Android Fresco dependencies; iOS is handled by the podspec.
+
 ## Known issues
-1. [If you use Expo try this](https://github.com/Aleksefo/react-native-webp-format/issues/18)
-
-
-2. .getSize() doesn't work on WebP images. Use instead:
+1. `.getSize()` doesn't work on WebP images. Use instead:
 ```
 const {width, height} = Image.resolveAssetSource(require('./assets/1.sm.webp'));
 ```
-
 3. Multiple animated images of too large size (~5MB) may crash iOS app due to running out of memory. [Possible solution](https://github.com/Aleksefo/react-native-webp-format/issues/28)
 
 
