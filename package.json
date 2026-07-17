@@ -32,5 +32,17 @@
   },
   "devDependencies": {
     "@expo/config-plugins": "^55.0.7"
+  },
+  "codegenConfig": {
+    "name": "ReactNativeWebPFormatSpec",
+    "type": "modules",
+    "jsSrcsDir": ".",
+    "ios": {
+      "modulesConformingToProtocol": {
+        "RCTImageDataDecoder": [
+          "WebPImageDataDecoder"
+        ]
+      }
+    }
   }
 }
